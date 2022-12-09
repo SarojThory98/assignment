@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: rgb(209, 204, 196);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row ">
+        <div class="col">
+            <nav class="px-3 navbar navbar-expnad-sm justify-content-between bg-light fixed-top">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <h3>DianApps</h3>
+                    </li>
+                </ul>
+                <form class="d-flex input-group w-25">
+                    <input type="text" class="form-control d-none d-lg-block" placeholder="search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="profile_section d-flex flex-row justify-content-end">
+
+                    <i class="fa-solid fa-bell mx-sm-3 mt-2"></i>
+                    <i class="fa-solid fa-message mx-3 mt-2"></i>
+                    <div class="d-flex flex-sm-row">
+                        <i class="fa-solid fa-user ms-sm-4 mt-2"></i>
+                        <div>
+                            <div class="dropdown mx-sm-3">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenu"
+                                    data-bs-toggle="dropdown">
+                                    S. Thory
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                    <h5 style="text-align: center;">Saroj Thory</h5>
+                                    <small>Trainee Software Engineer</small>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <div class="container-fluid d-flex mt-1">
+        <div class="row">
+            <div class="col-2 ms-0">
+                <nav class="navbar text-align-start d-flex fixed-start mt-4" style="width: 10%;">
+                    <ul class="navbar-nav p-sm-4 mt-3 pt-5 border-bottom border-end border-dark">
+                        <li class="nav-item my-3">
+                            <a class="nav-link" href="index.html">
+                                <i class="fa-solid fa-gauge"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item my-3">
+                            <a class="nav-link" href="form.html">
+                                <i class="fa-solid fa-text-height"></i>
+                                <span>Forms</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-3">
+                            <a class="nav-link" href="tables.html">
+                                <i class="fa-solid fa-table"></i>
+                                <span>Tables</span>
+                            </a>
+                        </li>
+                        <small class="my-3">PAGES</small>
+                        <li class="nav-item my-3">
+                            <a class="nav-link" href="profile.html">
+                                <i class="fa-regular fa-user"></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-3">
+                            <a class="nav-link" href="contact.html">
+                                <i class="fa-regular fa-address-card"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-3">
+                            <a class="nav-link" href="register.html">
+                                <i class="fa-sharp fa-solid fa-registered"></i>
+                                <span>Register</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-3">
+                            <a class="nav-link" href="login.html">
+                                <i class="fa-solid fa-right-to-bracket"></i>
+                                <span>Login</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+
+
+            <div class="col-8 ms-4">
+
+                <div class="container d-flex mt-5 pt-5">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="d-flex flex-column align-items-center card-body pt-4 profile-card ">
+                                    <img src="../images/profile_pic .png" alt="profile-pic">
+                                    <h3>Saroj Thory</h3>
+                                    <h5>Trainee Software Engineer</h5>
+                                    <div class="mt-2">
+                                        <a href="https://twitter.com/">
+                                            <i class="fa-brands fa-square-twitter"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/">
+                                            <i class="fa-brands fa-square-instagram"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Overview</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Edit Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Settings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Change Password</a>
+                                </li>
+                            </ul>
+                            <div class="contant">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eum
+                                iste tempore officia culpa rem dicta recusandae quas veniam delectus
+                                ipsam, inventore dolor repudiandae sapiente voluptates, laborum fuga
+                                asperiores! Nostrum, sapiente consequatur pariatur autem, eius, hic
+                                maxime delectus veritatis temporibus eveniet labore inventore.
+                                Perferendis corrupti nemo magni consectetur laborum, dicta soluta
+                                velit quos numquam! Reprehenderit harum optio nihil inventore! Totam
+                                quibusdam ipsam quis dolor autem, pariatur officia dicta illo accusamus
+                                atque commodi aut cupiditate vero. Pariatur, sunt! Minima voluptates
+                                cupiditate fugit blanditiis delectus impedit eveniet facilis eius ipsa nobis
+                                ad maiores accusamus ut totam voluptate earum velit dignissimos itaque porro dolor
+                                eum asperiores, quia architecto! Beatae omnis consequatur accusantium et dicta,
+                                error eum, quod in odio ea suscipit eius esse praesentium vel quaerat. Inventore eum
+                                architecto aut hic animi sapiente provident
+                                fugiat modi ipsum! Sed nostrum dolore accusamus, placeat at id dignissimos est
+                                eum natus amet unde qui assumenda vero, excepturi vitae numquam facilis
+                                eligendi labore quasi sit. Ipsam alias similique ex quos aliquid magni error
+                                quaerat accusantium adipisci maiores deserunt earum atque animi velit ea soluta
+                                libero aspernatur numquam natus delectus ipsa, officiis, ad iste. Veritatis
+                                nihil facere deleniti quae. Illo, odit repudiandae unde voluptatibus,
+                                praesentium vitae quisquam est nobis at magni ratione error laudantium
+                                consectetur autem numquam excepturi.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
