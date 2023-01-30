@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm" style="background-color:lightgray;">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Logo</a>
+            <div class=" navbar-collapse justify-content-between">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link active">Profile</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Messages</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">dropdown1</a>
+                            <a href="#" class="dropdown-item">dropdown2</a>
+                            <a href="#" class="dropdown-item">dropdown3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-nav text-success">Count=
+                    <span class="cardCount"></span>
+                </div>
+                <div class="navbar-nav">
+                    <button type="button" class="btn btn-primary clickBtn">Add Item</button>
+                    <!-- modal -->
+                    <div class="modal form-modal mt-5" style="display : none;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close crossBtn" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <form class="validForm" action="">
+                                    <div class="modal-body" id="mBody">
+                                        <p>
+                                            <input type="text" id="text1" name="titleArea"
+                                                class="form-control textArea1" placeholder="title"></input>
+                                        </p>
+                                        <p>
+                                            <textarea id="text2" type="text" name="msgArea"
+                                                class="form-control textArea2" rows="3"
+                                                placeholder="Message"></textarea>
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer modalBtn">
+                                        <input type="hidden" class="hiddenClass">
+                                        <button type="submit" class="btn btn-secondary updateBtn"
+                                            data-bs-dismiss="modal" style="display:none;">Update</button>
+                                        <button type="submit" class="btn btn-success addBtn"
+                                            data-bs-dismiss="modal">Add</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row mt-5 cardColumn">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
